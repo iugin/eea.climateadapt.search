@@ -1,0 +1,31 @@
+version: "2"
+
+services:
+
+  esmaster:
+    image: eeacms/elastic:1.7.5-1.6
+    restart: always
+    command:
+      - elasticsearch
+      - -Des.cluster.name="climateadapt"
+
+  app:
+    image: eeacms/esbootstrap:latest
+    volumes_from: # Mount code as a volume for easy restart
+      - esbootstrap-data-config
+    environment:
+      - elastic_host=esmaster
+      - APP_CONFIG_DIRNAME=climate-adapt
+      - NODE_ENV=dev  # Change to production if you want to test the app in production environment
+    entrypoint:
+      - /node_modules/.bin/nodemon
+      - /code/app.js
+      - --watch
+      - /code/config/*/settings.json
+    command:
+      - runserver
+
+  esbootstrap-data-config:
+    image: eeacms/climateadapt-search:master
+    volumes:
+      - /code/config
