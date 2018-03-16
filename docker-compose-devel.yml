@@ -38,3 +38,4 @@ services:
     #     - github_repo=https://github.com/eea/eea.climateadapt.search
     volumes:
       - /code/config
+      - ./climate-adapt:/code/config/climate-adapt
