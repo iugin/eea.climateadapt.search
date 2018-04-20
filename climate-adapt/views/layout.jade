@@ -68,6 +68,7 @@ html
                     link(rel='stylesheet', href=style)
 
         block extrastyles
+
         style(type='text/css').
             #portal-columns,
             #footer {
@@ -85,6 +86,7 @@ html
             }
             .nav.navbar-nav {
                 height: 40px;
+                margin-top: -1px;
             }
             .nav.navbar-nav li {
                 margin: 0px;
@@ -102,11 +104,12 @@ html
             #navbar-collapse-1 {
                 height: 40px;
                 background-color: #a5bf26;
+                padding-left: 0px;
+                padding-right: 0px;
             }
             body {
                 background: #CCC;
             }
-
             #portal-breadcrumbs.plone-breadcrumb {
                 background-color: #E9ECC9;
             }
@@ -126,7 +129,8 @@ html
             .jstree-anchor:hover {
                 color: #000 !important;
             }
-        //-
+
+
             #eea-above-columns, #portal-columns {
                 margin-left: auto;
                 margin-right: auto;
@@ -139,6 +143,50 @@ html
             }
             .container {
                 padding: 0px;
+            }
+            .facet_label_count{
+                width: 30px;
+            }
+
+            .eea-tileInner {
+                height: 205px;
+            }
+            .eea-tile {
+                padding: 5px;
+                width: 33.33%;
+            }
+            .eea-tileTitle {
+                font-size: 1.1em;
+            }
+            @media (max-width: 880px) {
+                .eea-tile {
+                    width: 33.3%;
+                    padding: 5px;
+                }
+            }
+            @media (max-width: 800px) {
+                .eea-tile {
+                    width: 50%;
+                    padding: 5px;
+                }
+            }
+            @media (max-width: 767px) {
+                .eea-tile {
+                    width: 33.3%;
+                    padding : 1px;
+                }
+            }
+            @media (max-width: 600px) {
+                .eea-tile {
+                    width: 50%;
+                }
+            }
+            @media (max-width: 380px) {
+                .eea-tile {
+                    width: 100%;
+                }
+            }
+
 
 
     body(class="fullwidth #{app_id}")
