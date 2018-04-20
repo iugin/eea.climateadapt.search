@@ -5,6 +5,10 @@ html
         block title
         meta(charset='utf-8')
         meta(name="viewport" content="width=device-width, initial-scale=1")
+
+        include ../../../../external_templates/head.html
+        link(rel='stylesheet', href="http://localhost:8080/cca/frontpage/cca/++theme++climateadapt/static/style-search.css")
+
         script(type='text/javascript').
             var field_base="#{field_base}";
         script
@@ -63,11 +67,82 @@ html
                 each style in css_resources.layout_page
                     link(rel='stylesheet', href=style)
 
-
         block extrastyles
+        style(type='text/css').
+            #portal-columns,
+            #footer {
+                padding: 0px;
+            }
+            .jstree-node {
+                height: 24px;
+                display: inline;
+            }
+            .jstree-anchor {
+                margin-top: -18px;
+                height: 24px;
+                display: inline-block;
+                position: static;
+            }
+            .nav.navbar-nav {
+                height: 40px;
+            }
+            .nav.navbar-nav li {
+                margin: 0px;
+            }
+            #navbar {
+                font-size: 13.2px;
+                font-family: Arial;
+                min-height: 40px;
+                height: 40px;
+                margin: 0px;
+            }
+            #searchGadget_form {
+                float: right;
+            }
+            #navbar-collapse-1 {
+                height: 40px;
+                background-color: #a5bf26;
+            }
+            body {
+                background: #CCC;
+            }
+
+            #portal-breadcrumbs.plone-breadcrumb {
+                background-color: #E9ECC9;
+            }
+            #portal-breadcrumbs.plone-breadcrumb ol > li + li:before {
+                color: #a8a998;
+            }
+            #portal-breadcrumbs.plone-breadcrumb ol > li + li:after {
+                color: #797a74;
+            }
+            #eea-above-columns {
+                margin-bottom: -17px;
+                margin-top: 18px;
+            }
+            #content h1 {
+                margin: 0px;
+            }
+            .jstree-anchor:hover {
+                color: #000 !important;
+            }
+        //-
+            #eea-above-columns, #portal-columns {
+                margin-left: auto;
+                margin-right: auto;
+                min-width: 10% !important;
+                max-width: 90%;
+                padding: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                width: 984px;
+            }
+            .container {
+                padding: 0px;
+
 
     body(class="fullwidth #{app_id}")
-        h1 Climate Adapt Search Database
+        include ../../../../external_templates/header.html
 
         if (enableBreadcrumbs)
             +portal_breadcrumbs (breadcrumbs)
@@ -104,3 +179,5 @@ html
         if google_map_key != "false"
             script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=#{google_map_key}")
         script(type="text/javascript", src="https://www.eea.europa.eu/external_templates_scripts.js")
+
+        include ../../../../external_templates/footer.html

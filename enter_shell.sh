@@ -1,2 +1,2 @@
 #!/bin/sh
-docker-compose -f docker-compose-devel.yml exec app bash
+docker-compose -f docker-compose-devel.yml exec search-app bash
