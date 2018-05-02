@@ -1,6 +1,31 @@
 version: "2"
 
 services:
+  apache:
+    image: eeacms/apache:latest
+    ports:
+    - "80:80"
+    depends_on:
+    - plone
+    environment:
+      APACHE_CONFIG: |-
+        <VirtualHost *:80>
+
+            ServerAdmin contact@localhost
+            ServerName climate-local.com
+            ErrorLog /var/log/apache.log
+
+            RewriteEngine On
+            #RewriteRule ^/(.*esbootstrap\_resources.*) http://search-app:3000/VirtualHostBase/http/climate-local.com:80/VirtualHostRoot/$$1 [P,L]
+            #RewriteRule ^/(.*data\-and\-downloads.*) http://search-app:3000/VirtualHostBase/http/climate-local.com:80/VirtualHostRoot/$$1 [P,L]
+
+            RewriteRule ^/(.*esbootstrap\_resources.*) http://search-app:3000/$$1 [P,L]
+            RewriteRule ^/(.*data\-and\-downloads.*) http://search-app:3000/$$1 [P,L]
+            RewriteRule ^/(knowledge\/tools.*) http://plone:8080/VirtualHostBase/http/climate-local.com:80/cca/VirtualHostRoot/$$1 [P,L]
+            RewriteRule ^/.*(tools.*) http://search-app:3000/$$1 [P,L]
+            RewriteRule ^/(.*) http://plone:8080/VirtualHostBase/http/climate-local.com:80/cca/VirtualHostRoot/$$1 [P,L]
+
+        </VirtualHost>
 
   plone:
     # image: eeacms/eea.docker.plone-climateadapt:v1.5
