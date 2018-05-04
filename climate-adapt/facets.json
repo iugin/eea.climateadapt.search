@@ -209,7 +209,7 @@
                 "visible": false
             },
             "facet": {
-                "autocomplete": true,
+                "autocomplete": false,
                 "visible": true,
                 "title": "Type of Data",
                 "pos": 3,
@@ -264,7 +264,7 @@
                 "visible" : true
             },
             "facet": {
-                "autocomplete": true,
+                "autocomplete": false,
                 "visible": true,
                 "title": "Climate Impacts",
                 "size": 200,
@@ -350,7 +350,7 @@
                 "min_size": 10,
                 "order": "term",
                 "operator": "OR",
-                "autocomplete": true,
+                "autocomplete": false,
                 "autocomplete_placeholder": "Search for country",
                 "empty_message": "No countries to show",
                 "short_name": "Country",
@@ -462,7 +462,7 @@
                 "min_size": 10,
                 "order": "term",
                 "operator": "AND",
-                "autocomplete": true,
+                "autocomplete": false,
                 "autocomplete_placeholder": "Search for topic",
                 "empty_message": "No topics to show",
                 "short_name": "Topic",
@@ -632,7 +632,7 @@
                 "min_size": 10,
                 "order": "reverse_count",
                 "operator": "OR",
-                "autocomplete": true,
+                "autocomplete": false,
                 "autocomplete_placeholder": "Search for regions/places/cities/seas...",
                 "empty_message": "No regions/places/cities/seas... to show",
                 "short_name": "Region",
@@ -738,7 +738,7 @@
                 "min_size": 10,
                 "order": "reverse_count",
                 "operator": "OR",
-                "autocomplete": true,
+                "autocomplete": false,
                 "autocomplete_placeholder": "Search for organisations...",
                 "empty_message": "No organisations... to show",
                 "short_name": "Organisation",
