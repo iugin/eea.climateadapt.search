@@ -176,13 +176,13 @@
   },
   "//": "Normalise missing properties with the given values",
   "normMissing": {
-    "http://purl.org/dc/terms/issued": "1970-01-01T12:00:00Z",
-    "http://purl.org/dc/terms/spatial": "Other",
+    "issued": "1970-01-01T12:00:00Z",
+    "spatial": "Other",
     "label": "Title n/a",
-    "http://purl.org/dc/terms/title": "Title n/a",
-    "http://purl.org/dc/terms/creator": "European Environment Agency (EEA)",
+    "title": "Title n/a",
+    "creator": "European Environment Agency (EEA)",
     "organisation": "European Environment Agency (EEA)",
-    "http://purl.org/dc/terms/format": "text/html",
+    "format": "text/html",
     "places" : "unknown",
     "year": "0"
   },

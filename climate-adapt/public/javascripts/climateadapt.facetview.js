@@ -1,17 +1,17 @@
 window.esbootstrap_options = {
     search_sortby: [
         {
-            'field': 'http://purl.org/dc/terms/title',
+            'field': 'title',
             'display_asc': 'Title a-z',
             'display_desc': 'Title z-a'
         },
         {
-            'field': 'http://purl.org/dc/terms/issued',
+            'field': 'issued',
             'display_asc': 'Oldest',
             'display_desc': 'Newest'
         }
     ],
-    sort: [{'http://purl.org/dc/terms/issued': {'order': 'desc'}}],
+    sort: [{'issued': {'order': 'desc'}}],
     paging: {
         from: 0,
         size: 50

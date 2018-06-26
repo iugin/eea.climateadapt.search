@@ -10,10 +10,10 @@
     "highlights": {
         "enabled": true,
         "whitelist": [
-            "http://purl.org/dc/terms/title",
+            "title",
             "label",
-            "http://purl.org/dc/terms/description",
-            "http://www.eea.europa.eu/portal_types#topic"
+            "description",
+            "topic"
             ],
         "blacklist": []
     },
@@ -82,14 +82,14 @@
                 {
                     "rule": "startsWith",
                     "operator": "",
-                    "field": "http://www.w3.org/1999/02/22-rdf-syntax-ns#about",
+                    "field": "about",
                     "value": "http://climate-adapt.eea.europa.eu",
                     "thumb_template": {
                         "template": "http://www.eea.europa.eu/themes/air/multimedia/multimedia/image_preview",
                         "variables": [{
                                 "name": "url",
                                 "type" : "field",
-                                "field" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#about"
+                                "field" : "about"
                         }]
                     },
                     "icon_template": {
@@ -114,7 +114,7 @@
                 "width": "200px",
                 "display": {
                     "pre": "<a href=\"",
-                    "field": "http://www.w3.org/1999/02/22-rdf-syntax-ns#about",
+                    "field": "about",
                     "post": "\">"
                 }
             },
@@ -162,8 +162,7 @@
             }
         },
         {
-            "name": "http://purl.org/dc/terms/issued",
-            "values_blacklist": ["unknown", "NaN undefined NaN", "1111-01-01T12:00:00Z"],
+            "name": "issued",
             "listing": {
                 "type": "date",
                 "format": "dd M yy",
@@ -195,7 +194,7 @@
             }
         },
         {
-            "name": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "name": "type",
             "listing": {
                 "title": "Type of Data",
                 "visible" : true
@@ -384,7 +383,7 @@
             }
         },
         {
-            "name": "http://www.w3.org/1999/02/22-rdf-syntax-ns#about",
+            "name": "about",
             "listing": {
                 "title": "about",
                 "visible": false
@@ -438,7 +437,7 @@
         },
 
         {
-            "name": "http://www.eea.europa.eu/portal_types#topic",
+            "name": "topic",
             "listing": {
                 "title": "Topics",
                 "visible" : false,
@@ -482,7 +481,7 @@
             }
         },
         {
-            "name": "http://purl.org/dc/terms/creator",
+            "name": "creator",
             "listing": {
                 "title": "Creator",
                 "visible" : false,
@@ -498,7 +497,7 @@
             }
         },
         {
-            "name": "http://www.eea.europa.eu/ontologies.rdf#hasWorkflowState",
+            "name": "hasWorkflowState",
             "listing": {
                 "visible": false
             },
@@ -512,7 +511,7 @@
             }
         },
         {
-            "name": "http://purl.org/dc/terms/modified",
+            "name": "modified",
             "listing": {
                 "visible": false
             },
@@ -526,7 +525,7 @@
             }
         },
         {
-            "name": "http://purl.org/dc/terms/expires",
+            "name": "expires",
             "listing": {
                 "visible": false
             },
@@ -540,7 +539,7 @@
             }
         },
         {
-            "name": "http://purl.org/dc/terms/description",
+            "name": "description",
             "listing": {
                 "title": "description",
                 "visible": false,
@@ -640,7 +639,7 @@
             }
         },
         {
-            "name": "http://www.eea.europa.eu/ontologies.rdf#objectProvides",
+            "name": "objectProvides",
             "values_whitelist": [
                              "Article",
                              "EEA Job Vacancy",
@@ -746,7 +745,7 @@
             }
         },
         {
-            "name": "http://www.w3.org/1999/02/22-rdf-syntax-ns#about",
+            "name": "about",
             "listing": {
                 "visible": false
             },
@@ -848,7 +847,7 @@
             }
         },
         {
-            "name": "http://purl.org/dc/terms/format",
+            "name": "format",
             "listing": {
                 "title": "Format",
                 "visible": false
@@ -879,7 +878,7 @@
 
         },
         {
-            "name": "http://purl.org/dc/terms/references",
+            "name": "references",
             "listing": {
                 "title": "References",
                 "visible": false
@@ -897,7 +896,7 @@
             }
         },
         {
-            "name": "http://www.eea.europa.eu/ontologies.rdf#fleschReadingEaseScore",
+            "name": "fleschReadingEaseScore",
             "listing": {
                 "title": "Reading Ease Score",
                 "visible": false
@@ -921,7 +920,7 @@
                 }
         },
         {
-            "name": "http://www.eea.europa.eu/ontologies.rdf#readingTime",
+            "name": "readingTime",
             "listing": {
                 "title": "Reading time (minutes)",
                 "visible": false

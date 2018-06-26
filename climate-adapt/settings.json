@@ -10,8 +10,8 @@
     "external_templates": {
         "local_path": "/external_templates",
         "protocol": "http",
-        "host": "192.168.0.125",
-        "port": "8080",
+        "host": "192.168.0.106",
+        "port": "5080",
         "head_path": "/cca/external-template-head",
         "header_path": "/cca/external-template-header",
         "footer_path": "/cca/external-template-footer",

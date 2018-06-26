@@ -31,12 +31,13 @@
     "http://www.eea.europa.eu/ontologies.rdf#readingTime"
   ],
   "listtype": "white",
+  "//": "Normalise Properties uris, imitate owl:sameAs or when you want to use a property instead of another",
   "normProp": {
-    "http://purl.org/dc/terms/issued": ["http://purl.org/dc/terms/issued", "year"],
+    "http://purl.org/dc/terms/issued": ["issued", "year"],
     "http://purl.org/dc/terms/creator": ["creator_cms"],
-    "http://www.eea.europa.eu/portal_types/Event#endDate": ["http://purl.org/dc/terms/expires"],
-    "http://purl.org/dc/terms/title": ["http://purl.org/dc/terms/title","label"],
-    "http://www.eea.europa.eu/portal_types/Fiche#summary": "http://purl.org/dc/terms/description",
+    "http://www.eea.europa.eu/portal_types/Event#endDate": ["expires"],
+    "http://purl.org/dc/terms/title": ["title","label"],
+    "http://www.eea.europa.eu/portal_types/Fiche#summary": "description",
     "http://purl.org/dc/terms/abstract": "text",
     "http://www.eea.europa.eu/portal_types/Article#text": "text",
     "http://www.eea.europa.eu/portal_types/Article#temporalCoverage": ["time_coverage"],
@@ -168,16 +169,16 @@
   },
   "//": "Normalise missing properties with the given values",
   "normMissing": {
-    "http://purl.org/dc/terms/spatial": "Other",
-    "http://www.eea.europa.eu/portal_types#topic": "Various other issues",
-    "http://www.eea.europa.eu/ontologies.rdf#hasWorkflowState": "published",
-    "http://purl.org/dc/terms/title": "Title n/a",
-    "http://purl.org/dc/terms/creator": "European Environment Agency (EEA)",
+    "spatial": "Other",
+    "topic": "Various other issues",
+    "hasWorkflowState": "published",
+    "title": "Title n/a",
+    "creator": "European Environment Agency (EEA)",
     "organisation": "European Environment Agency (EEA)",
-    "http://purl.org/dc/terms/format": "text/html",
+    "format": "text/html",
     "places" : "unknown",
-    "http://www.eea.europa.eu/ontologies.rdf#fleschReadingEaseScore" : 0,
-    "http://www.eea.europa.eu/ontologies.rdf#readingTime" : -1
+    "fleschReadingEaseScore" : 0,
+    "readingTime" : -1
   },
   "//": "Sync conditions",
   "syncConditions": [
