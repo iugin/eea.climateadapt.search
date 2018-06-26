@@ -25,10 +25,22 @@
             "date" : {"type": "date"}
         }
     },
-    "sectors":{
-      "type" : "keyword",
-      "analyzer" : "none"
+    "climate_impacts": {
+      "type" : "string",
+      "analyzer" : "none",
+      "fielddata": true
     },
+    "sectors": {
+      "type" : "string",
+      "analyzer" : "none",
+      "fielddata": true
+    },
+    "elements":{
+      "type" : "string",
+      "analyzer" : "none",
+      "fielddata": true
+    },
+
     "cluster_id": {
       "type" : "text",
       "analyzer" : "none"
@@ -102,7 +114,7 @@
       "copy_to" : ["did_you_mean", "autocomplete"]
     },
     "year" : {
-      "type" : "long",
+      "type" : "text",
       "fielddata" : true,
       "analyzer" : "date2year"
     },
