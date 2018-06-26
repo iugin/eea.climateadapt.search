@@ -9,6 +9,12 @@ html
 
         include ../../../../external_templates/head.html
 
+        script(type='text/javascript', src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js")
+        //script(type='text/javascript', src="/portal_javascripts/Sunburst%20Theme/++resource++plone.app.jquery.js")
+        //script(type='text/javascript', src="/frontpage/cca/++theme++climateadapt/static/bootstrap.min.js")
+        //script(type='text/javascript', src="/frontpage/cca/++theme++climateadapt/static/bs3/js/bootstrap.min.js")
+        //script(type='text/javascript', src="/portal_javascripts/Sunburst%20Theme/++resource++collective.js.bootstrap/js/bootstrap.min.js")
+
         script(type='text/javascript').
             var field_base="#{field_base}";
         script
@@ -71,8 +77,6 @@ html
 
         link(rel='stylesheet', href="/frontpage/cca/++theme++climateadapt/static/style-search.css")
 
-        script(type='text/javascript', src="/frontpage/cca/++theme++climateadapt/static/resourceplone.app.jquery.js")
-        script(type='text/javascript', src="/frontpage/cca/++theme++climateadapt/static/resourceplone.app.eventevent.js")
 
 
     body(class="fullwidth #{app_id}")
@@ -118,3 +122,5 @@ html
 
     //-
         include ../../../../external_templates/footer.html
+
+
