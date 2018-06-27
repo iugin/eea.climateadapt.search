@@ -115,9 +115,7 @@
       "copy_to" : ["did_you_mean", "autocomplete"]
     },
     "year" : {
-      "type" : "text",
-      "fielddata" : true,
-      "analyzer" : "date2year"
+      "type" : "long"
     },
     "time_coverage" : {
       "type" : "text",
