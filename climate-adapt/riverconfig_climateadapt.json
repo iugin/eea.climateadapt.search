@@ -88,7 +88,8 @@
     "http://purl.org/dc/terms/creator": ["creator_cms"],
     "http://purl.org/dc/terms/title": ["http://purl.org/dc/terms/title","label"],
     "http://purl.org/dc/terms/abstract": "text",
-    "http://purl.org/dc/terms/spatial":["http://purl.org/dc/terms/spatial","places"]
+    "http://purl.org/dc/terms/spatial":["http://purl.org/dc/terms/spatial","places"],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": ["type_of_data"]
   },
   "//": "Normalise the properties to the given value",
   "normalisedProperties": {
@@ -122,6 +123,14 @@
     "http://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.organisation#eeaclimateadaptorganisation": "Organisations",
     "http://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.publicationreport#eeaclimateadaptpublicationreport": "Publication and Reports",
     "http://climate-adapt.eea.europa.eu/portal_types/collective.cover.content#collectivecovercontent": "Webpage",
+    "http://climate-adapt.eea.europa.eu/portal_types/Document#Document": "Webpage",
+    "http://climate-adapt.eea.europa.eu/portal_types/File#File": "Webpage",
+    "http://climate-adapt.eea.europa.eu/portal_types/Collection#Collection": "Webpage",
+    "http://climate-adapt.eea.europa.eu/portal_types/Image#Image": "Webpage",
+    "http://climate-adapt.eea.europa.eu/portal_types/News%20Item#NewsItem": "Webpage",
+    "http://climate-adapt.eea.europa.eu/portal_types/EasyForm#EasyForm": "Webpage",
+    "http://climate-adapt.eea.europa.eu/portal_types/Event#Event": "Webpage",
+    "http://climate-adapt.eea.europa.eu/portal_types/Folder#Folder": "Webpage",
     "Document": "Webpage",
     "File": "Webpage",
     "Collection": "Webpage",
