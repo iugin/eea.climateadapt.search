@@ -10,15 +10,15 @@
     "external_templates": {
         "local_path": "/external_templates",
         "protocol": "http",
-        "host": "192.168.0.125",
-        "port": "8080",
-        "head_path": "/cca/external-template-head",
-        "header_path": "/cca/external-template-header",
-        "footer_path": "/cca/external-template-footer",
+        "host": "192.168.0.106",
+        "port": "5080",
+        "head_path": "/Plone/marine/external-template-head",
+        "header_path": "/Plone/marine/external-template-header",
+        "footer_path": "/Plone/marine/external-template-footer",
         "strip_templates": true
     },
     "layout_vars": {
-        "head_title": "Climate adapt test",
+        "head_title": "Wise Marine",
         "app_id": "pam",
         "skip_external_template_styles": true,
         "skip_resources_bundling": false,
@@ -36,7 +36,7 @@
             ],
             "details_page": []
         },
-        "site_title": "Climate adapt search",
+        "site_title": "Wise",
         "site_description": "",
         "enableBreadcrumbs": true,
         "breadcrumbs": [{"Home":"http://climate-adapt.eea.europa.eu/"}, {"Climate adapt search": ""}],
