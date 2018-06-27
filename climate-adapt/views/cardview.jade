@@ -7,7 +7,7 @@ div(class="eea-tile")
             h4(class="eea-tileTitle") ${title}
             div(class="eea-tileDescription") ${long_description}
             div(class="eea-tileMetadata")
-                span(class="eea-tileTypeSpan", title="${type}") ${type}
+                span(class="eea-tileTypeSpan", title="${type_of_data}") ${type_of_data}
                 time(class="eea-tileIssued", datetime="${year}") ${year}
-                div(class="eea-tileType", title="${type}", style="background-image: url(${typeIcon})")
-                    span(class="eea-tileTypeIcon, eea-tileType-${typeClass}", title="${type}") ${type}
+                div(class="eea-tileType", title="${type_of_data}", style="background-image: url(${typeIcon})")
+                    span(class="eea-tileTypeIcon, eea-tileType-${typeClass}", title="${type_of_data}") ${type_of_data}
