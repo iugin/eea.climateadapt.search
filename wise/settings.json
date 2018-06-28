@@ -3,7 +3,7 @@
         "port": 3000
     },
     "elastic": {
-        "index": "esbootstrapdata-climate",
+        "index": "esbootstrapdata-wise",
         "type": "resource",
         "field_base":"",
         "enableValuesCounting": true
@@ -26,6 +26,7 @@
         "override_searchserver_resources": true,
         "css_resources": {
             "index_page": [
+                "css/wise.facetview.css"
                 "css/no-more-tables.css",
                 "css/esbootstrap.facetview.css",
                 "css/climateadapt.facetview.css"
@@ -68,20 +69,21 @@
                 "facetview/jquery.autocompleteforfacet.js",
 
                 "javascripts/esbootstrap.facetview.js",
-                "javascripts/climateadapt.facetview.js",
-
+                
+                "javascripts/wise.facetview.js",
                 "javascripts/main.js"
+
             ],
             "_" : [
 
             ]
         },
-        "site_title": "Wise",
+        "site_title": "Wise Marine search",
         "site_description": "",
         "enableBreadcrumbs": true,
-        "breadcrumbs": [{"Home":"http://climate-adapt.eea.europa.eu/"}, {"Climate adapt search": ""}],
-        "dataprovencance_info_text": "Climate adapt search",
-        "dataprovencance_info_url": "climate adapt dev",
+        "breadcrumbs": [{"Home":"https://water.europa.eu/marine/"}, {"Wise Marine search": ""}],
+        "dataprovencance_info_text": "Wise Marine search",
+        "dataprovencance_info_url": "wise marine dev",
         "further_info": ""
     },
     "es_debug_enabled": false,
@@ -90,9 +92,9 @@
        "river_configs": {
         "configs": [
             {
-                "id": "climateadapt",
-                "cluster_name": "climateadapt",
-                "config_file": "riverconfig_climateadapt.json"
+                "id": "wise",
+                "cluster_name": "wise",
+                "config_file": "riverconfig_wise.json"
             }
         ]
     },
