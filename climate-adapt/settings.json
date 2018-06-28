@@ -44,7 +44,7 @@
         "dataprovencance_info_url": "climate adapt dev",
         "further_info": ""
     },
-    "es_debug_enabled": true,
+    "es_debug_enabled": false,
     "suggestions_enabled": true,
        "river_configs": {
         "configs": [

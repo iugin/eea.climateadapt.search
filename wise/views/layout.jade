@@ -13,8 +13,6 @@ html
         //script(type='text/javascript', src="/frontpage/cca/++theme++climateadapt/static/bs3/js/bootstrap.min.js")
         //script(type='text/javascript', src="/portal_javascripts/Sunburst%20Theme/++resource++collective.js.bootstrap/js/bootstrap.min.js")
 
-        include ../../../../external_templates/head.html
-
         script(type='text/javascript').
             var field_base="#{field_base}";
         script
@@ -75,9 +73,9 @@ html
 
         block extrastyles
 
-        link(rel='stylesheet', href="/frontpage/cca/++theme++climateadapt/static/style-search.css")
+        include ../../../../external_templates/head.html
 
-    body(class="fullwidth #{app_id}")
+    body(class="fullwidth #{app_id} content-page template-document_view portaltype-document site-marine section-data subsection-indicator-catalogue subsection-indicator-catalogue-indicator-catalogue icons-on userrole-anonymous pat-plone-widgets patterns-loaded")
         include ../../../../external_templates/header.html
 
         if (enableBreadcrumbs)
@@ -117,7 +115,9 @@ html
         if google_map_key != "false"
             script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=#{google_map_key}")
 
+        //script(data-drop="true", src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js")
 
+        script(src="/++theme++wise/js/main.js")
     //-
         include ../../../../external_templates/footer.html
 

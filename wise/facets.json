@@ -83,7 +83,7 @@
                     "rule": "startsWith",
                     "operator": "",
                     "field": "about",
-                    "value": "https://climate-adapt.eea.europa.eu",
+                    "value": "http://climate-adapt.eea.europa.eu",
                     "thumb_template": {
                         "template": "http://www.eea.europa.eu/themes/air/multimedia/multimedia/image_preview",
                         "variables": [{
@@ -413,7 +413,7 @@
             "name": "long_description",
             "listing": {
                 "title": "Long Description",
-                "visible": false
+                "visible": true
             },
             "facet": {
                 "facet_display_options": ["sort", "checkbox"],
