@@ -5,7 +5,8 @@
     "elastic": {
         "index": "esbootstrapdata-climate",
         "type": "resource",
-        "field_base":""
+        "field_base":"",
+        "enableValuesCounting": true
     },
     "external_templates": {
         "local_path": "/external_templates",
@@ -46,6 +47,7 @@
     },
     "es_debug_enabled": false,
     "suggestions_enabled": true,
+    "relevance_enabled": true,
        "river_configs": {
         "configs": [
             {
