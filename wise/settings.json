@@ -26,10 +26,10 @@
         "override_searchserver_resources": true,
         "css_resources": {
             "index_page": [
-                "css/wise.facetview.css"
                 "css/no-more-tables.css",
                 "css/esbootstrap.facetview.css",
-                "css/climateadapt.facetview.css"
+                "css/climateadapt.facetview.css",
+                "css/wise.facetview.css"
             ],
             "details_page": [
                 "css/esbootstrap.facetview.css"
@@ -69,7 +69,7 @@
                 "facetview/jquery.autocompleteforfacet.js",
 
                 "javascripts/esbootstrap.facetview.js",
-                
+
                 "javascripts/wise.facetview.js",
                 "javascripts/main.js"
 
