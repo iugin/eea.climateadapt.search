@@ -28,7 +28,6 @@
             "index_page": [
                 "css/no-more-tables.css",
                 "css/esbootstrap.facetview.css",
-                "css/climateadapt.facetview.css",
                 "css/wise.facetview.css"
             ],
             "details_page": [
