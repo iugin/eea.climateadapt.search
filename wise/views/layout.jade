@@ -7,8 +7,6 @@ html
         meta(charset='utf-8')
         meta(name="viewport" content="width=device-width, initial-scale=1")
 
-
-
         //script(type='text/javascript', src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js")
         //script(type='text/javascript', src="/portal_javascripts/Sunburst%20Theme/++resource++plone.app.jquery.js")
         //script(type='text/javascript', src="/frontpage/cca/++theme++climateadapt/static/bootstrap.min.js")
@@ -119,7 +117,9 @@ html
         if google_map_key != "false"
             script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=#{google_map_key}")
 
+        //script(data-drop="true", src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js")
 
+        script(src="/++theme++wise/js/main.js")
     //-
         include ../../../../external_templates/footer.html
 
