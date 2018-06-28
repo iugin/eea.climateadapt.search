@@ -171,9 +171,9 @@
                 "pos" : 6
             },
             "csv_tsv": {
-                "title": "issued",
+                "title": "Issued",
                 "visible": true,
-                "pos": 3
+                "pos": 2
             },
             "details": {
                 "visible": false
@@ -201,8 +201,8 @@
             },
             "csv_tsv": {
                 "title": "Type of Data",
-                "visible": false,
-                "pos": 11
+                "visible": true,
+                "pos": 3
             },
             "details": {
                 "visible": false
@@ -236,6 +236,11 @@
                 "title": "Adaptation Sectors",
                 "visible": true
             },
+            "csv_tsv": {
+                "title": "Adaptation Sectors",
+                "visible": true,
+                "pos": 4
+            },
             "facet": {
                 "facet_display_options": ["sort", "checkbox"],
                 "size": 50,
@@ -262,6 +267,11 @@
                 "title": "Climate Impacts",
                 "visible" : true
             },
+            "csv_tsv": {
+                "title": "Climate Impacts",
+                "visible": true,
+                "pos": 5
+            },
             "facet": {
                 "autocomplete": false,
                 "visible": true,
@@ -278,6 +288,11 @@
             "listing": {
                 "title": "Adaptation Elements",
                 "visible": true
+            },
+            "csv_tsv": {
+                "title": "Adaptation Elements",
+                "visible": true,
+                "pos": 6
             },
             "facet": {
                 "facet_display_options": ["sort", "checkbox"],
@@ -337,7 +352,8 @@
             },
             "csv_tsv": {
                 "title": "Countries",
-                "visible": false
+                "visible": true,
+                "pos": 7
             },
             "details": {
                 "visible": false
@@ -363,6 +379,11 @@
                 "title": "Year",
                 "visible": true
             },
+            "csv_tsv": {
+                "title": "Year",
+                "visible": true,
+                "pos": 8
+            },
             "facet": {
                 "visible": true,
                 "title": "Year",
@@ -374,7 +395,7 @@
                     "histogram" : false,
                     "measurement_unit": "year"
                     }
-                },
+            },
             "card": {
                 "field": "year",
                 "default": "",
@@ -391,7 +412,7 @@
             "csv_tsv": {
                 "title": "url",
                 "visible": true,
-                "pos": 10
+                "pos": 9
             },
             "details": {
                 "visible": false
@@ -414,6 +435,11 @@
             "listing": {
                 "title": "Long Description",
                 "visible": false
+            },
+            "csv_tsv": {
+                "title": "Long Description",
+                "visible": true,
+                "pos": 10
             },
             "facet": {
                 "facet_display_options": ["sort", "checkbox"],
