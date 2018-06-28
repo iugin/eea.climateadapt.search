@@ -3,14 +3,14 @@
         "port": 3000
     },
     "elastic": {
-        "index": "esbootstrapdata-climate",
+        "index": "esbootstrapdata-wise",
         "type": "resource",
         "field_base":""
     },
     "external_templates": {
         "local_path": "/external_templates",
         "protocol": "http",
-        "host": "192.168.0.106",
+        "host": "192.168.0.125",
         "port": "5080",
         "head_path": "/Plone/marine/external-template-head",
         "header_path": "/Plone/marine/external-template-header",
@@ -25,23 +25,23 @@
         "override_searchserver_resources": false,
         "css_resources": {
             "index_page": [
-                "css/climateadapt.facetview.css"
+                "css/wise.facetview.css"
             ],
             "details_page": []
         },
         "js_resources": {
             "index_page": [
                 "javascripts/esbootstrap.facetview.js",
-                "javascripts/climateadapt.facetview.js"
+                "javascripts/wise.facetview.js"
             ],
             "details_page": []
         },
-        "site_title": "Wise",
+        "site_title": "Wise Marine search",
         "site_description": "",
         "enableBreadcrumbs": true,
-        "breadcrumbs": [{"Home":"http://climate-adapt.eea.europa.eu/"}, {"Climate adapt search": ""}],
-        "dataprovencance_info_text": "Climate adapt search",
-        "dataprovencance_info_url": "climate adapt dev",
+        "breadcrumbs": [{"Home":"https://water.europa.eu/marine/"}, {"Wise Marine search": ""}],
+        "dataprovencance_info_text": "Wise Marine search",
+        "dataprovencance_info_url": "wise marine dev",
         "further_info": ""
     },
     "es_debug_enabled": false,
@@ -49,9 +49,9 @@
        "river_configs": {
         "configs": [
             {
-                "id": "climateadapt",
-                "cluster_name": "climateadapt",
-                "config_file": "riverconfig_climateadapt.json"
+                "id": "wise",
+                "cluster_name": "wise",
+                "config_file": "riverconfig_wise.json"
             }
         ]
     },
