@@ -1,17 +1,17 @@
 window.esbootstrap_options = {
     search_sortby: [
         {
-            'field': 'title',
+            'field': 'title.eea_title',
             'display_asc': 'Title a-z',
             'display_desc': 'Title z-a'
         },
         {
-            'field': 'issued',
+            'field': 'year',
             'display_asc': 'Oldest',
             'display_desc': 'Newest'
         }
     ],
-    sort: [{'issued': {'order': 'desc'}}],
+    sort: [{'year': {'order': 'desc'}}],
     paging: {
         from: 0,
         size: 50

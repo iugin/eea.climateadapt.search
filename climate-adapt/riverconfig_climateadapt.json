@@ -86,12 +86,16 @@
     "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.publicationreport#long_description": ["long_description"],
 
     "http://purl.org/dc/terms/creator": ["creator_cms"],
-    "http://purl.org/dc/terms/title": ["http://purl.org/dc/terms/title","label"],
+    "http://purl.org/dc/terms/title": ["title","label"],
     "http://purl.org/dc/terms/abstract": "text",
-    "http://purl.org/dc/terms/spatial":["http://purl.org/dc/terms/spatial","places"],
+    "http://purl.org/dc/terms/spatial":["spatial","places"],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": ["type_of_data"],
     "http://purl.org/dc/terms/issued": ["issued"],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#about": ["about"]
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#about": ["about"],
+    "http://purl.org/dc/terms/expires" : ["expires"],
+    "http://purl.org/dc/terms/modified" : ["modified"],
+    "http://purl.org/dc/terms/description" : ["description"],
+    "http://purl.org/dc/terms/format" : ["format"]
   },
   "//": "Normalise the properties to the given value",
   "normalisedProperties": {
