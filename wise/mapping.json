@@ -42,11 +42,11 @@
     },
 
     "cluster_id": {
-      "type" : "text",
+      "type" : "string",
       "analyzer" : "none"
     },
     "cluster_name": {
-      "type" : "text",
+      "type" : "string",
       "analyzer" : "none",
       "copy_to" : ["did_you_mean"]
     },
@@ -56,15 +56,15 @@
       "index": true
     },
     "dataProvider":{
-       "type" : "text",
+       "type" : "string",
        "copy_to" : ["organisation", "searchable_organisation"]
      },
      "dataProcessor":{
-       "type" : "text",
+       "type" : "string",
        "copy_to" : ["organisation", "searchable_organisation"]
      },
     "organisation" : {
-      "type" : "text",
+      "type" : "string",
       "analyzer" : "none",
       "copy_to" : ["did_you_mean", "searchable_organisation"]
     },
@@ -92,21 +92,21 @@
       "copy_to" : ["did_you_mean", "searchable_spatial"]
     },
     "places" : {
-      "type" : "text",
+      "type" : "string",
       "analyzer" : "none",
       "copy_to" : ["did_you_mean", "searchable_places"]
     },
     "creator_cms" : {
-      "type" : "text",
+      "type" : "string",
       "analyzer" : "none",
       "copy_to" : ["did_you_mean"]
     },
     "hasWorkflowState" : {
-      "type" : "text",
+      "type" : "string",
       "analyzer" : "none"
     },
     "title" : {
-      "type" : "text",
+      "type" : "string",
       "fields" : {
         "toindex" : {"type" : "text", "analyzer" : "default", "fielddata": true},
         "index" : {"type" : "keyword"},
@@ -118,16 +118,16 @@
       "type" : "long"
     },
     "time_coverage" : {
-      "type" : "text",
+      "type" : "string",
       "analyzer" : "date2year",
       "copy_to" : ["searchable_time_coverage"]
     },
     "format": {
-      "type" : "text",
+      "type" : "string",
       "analyzer" : "none"
     },
     "label": {
-      "type" : "text",
+      "type" : "string",
       "fields" : {
         "toindex" : {"type" : "text", "analyzer" : "default", "fielddata": true},
         "index" : {"type" : "keyword"},
@@ -136,12 +136,12 @@
       "copy_to" : ["did_you_mean"]
     },
     "text" : {
-      "type" : "text",
+      "type" : "string",
       "analyzer": "default",
       "copy_to" : ["did_you_mean"]
     },
     "references" : {
-      "type" : "text",
+      "type" : "string",
       "analyzer" : "none",
       "copy_to" : ["did_you_mean"]
     }
