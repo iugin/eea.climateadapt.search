@@ -1,7 +1,7 @@
 window.esbootstrap_options = {
     search_sortby: [
         {
-            'field': 'label',
+            'field': 'title.eea_title',
             'display_asc': 'Title a-z',
             'display_desc': 'Title z-a'
         },
