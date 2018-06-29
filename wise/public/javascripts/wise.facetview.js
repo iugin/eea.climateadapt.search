@@ -6,7 +6,7 @@ window.esbootstrap_options = {
             'display_desc': 'Title z-a'
         },
         {
-            'field': 'issued',
+            'field': 'year',
             'display_asc': 'Oldest',
             'display_desc': 'Newest'
         }
