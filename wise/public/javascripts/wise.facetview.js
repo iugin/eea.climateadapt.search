@@ -11,7 +11,7 @@ window.esbootstrap_options = {
             'display_desc': 'Newest'
         }
     ],
-    sort: [{'issued': {'order': 'desc'}}],
+    sort: [{'year': {'order': 'desc'}}],
     paging: {
         from: 0,
         size: 50
