@@ -11,7 +11,7 @@
     "external_templates": {
         "local_path": "/external_templates",
         "protocol": "http",
-        "host": "192.168.0.125",
+        "host": "plone",
         "port": "8080",
         "head_path": "/cca/external-template-head",
         "header_path": "/cca/external-template-header",
@@ -22,7 +22,7 @@
         "head_title": "Climate adapt test",
         "app_id": "pam",
         "skip_external_template_styles": true,
-        "skip_resources_bundling": false,
+        "skip_resources_bundling": true,
         "override_searchserver_resources": false,
         "css_resources": {
             "index_page": [

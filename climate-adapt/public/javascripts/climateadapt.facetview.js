@@ -1,3 +1,4 @@
+var today = getTodayWithTime();
 window.esbootstrap_options = {
     search_sortby: [
         {
@@ -17,7 +18,51 @@ window.esbootstrap_options = {
         size: 50
     },
     display_type: 'card',
-    resultModifier: updateResult
+    resultModifier: updateResult,
+
+    predefined_filters : [
+        {
+            'constant_score': {
+                'filter': {
+                    'bool': {
+                        'should': [
+                            {'bool': {'must_not': {'exists': {'field': 'expires'}}}},
+                            {'range': {'expires': {'gte': today}}}
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+/*
+    predefined_filters : [
+        {'term': {'hasWorkflowState': 'published'}},
+        {
+            'constant_score': {
+                'filter': {
+                    'bool': {
+                        'should': [
+                            {'bool':{'must_not':{'exists': {'field': 'issued'}}}},
+                            {'range': {'issued': {'lte': today}}}
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            'constant_score': {
+                'filter': {
+                    'bool': {
+                        'should': [
+                            {'bool': {'must_not': {'exists': {'field': 'expires'}}}},
+                            {'range': {'expires': {'gte': today}}}
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+*/
 };
 function updateContentTypes(element, result){
     result.contentType = 'generic';

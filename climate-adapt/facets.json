@@ -80,10 +80,10 @@
             "fallback_icon" : "",
             "rules": [
                 {
-                    "rule": "startsWith",
+                    "rule": "contains",
                     "operator": "",
                     "field": "about",
-                    "value": "https://climate-adapt.eea.europa.eu",
+                    "value": "//climate-adapt.eea.europa.eu",
                     "thumb_template": {
                         "template": "http://www.eea.europa.eu/themes/air/multimedia/multimedia/image_preview",
                         "variables": [{
@@ -98,6 +98,28 @@
                                 "name": "generic",
                                 "type" : "variable",
                                 "field" : "contentType"
+                        }]
+                    }
+                },
+                {
+                    "rule": "startsWith",
+                    "operator": "",
+                    "field": "about",
+                    "value": "http://www.eea.europa.eu",
+                    "thumb_template": {
+                        "template": "${url}/image_preview",
+                        "variables": [{
+                                "name": "url",
+                                "type" : "field",
+                                "field" : "about"
+                        }]
+                    },
+                    "icon_template": {
+                        "template": "https://www.eea.europa.eu/portal_depiction/${contentType}/image_thumb",
+                        "variables": [{
+                                "name": "contentType",
+                                "type" : "variable",
+                                "variable" : "contentType"
                         }]
                     }
                 }
@@ -159,38 +181,6 @@
                 "default": "",
                 "visible": true,
                 "simple" : true
-            }
-        },
-        {
-            "name": "issued",
-            "listing": {
-                "type": "date",
-                "format": "dd M yy",
-                "title": "Issued",
-                "visible" : true,
-                "pos" : 6
-            },
-            "csv_tsv": {
-                "title": "Issued",
-                "visible": true,
-                "pos": 2
-            },
-            "details": {
-                "visible": false
-            },
-            "card": {
-                "type": "date",
-                "format": "dd M yy",
-                "field": "date",
-                "default": "",
-                "visible": true
-            },
-            "list": {
-                "type": "date",
-                "format": "dd M yy",
-                "field": "date",
-                "default": "",
-                "visible": true
             }
         },
         {
@@ -401,6 +391,43 @@
                 "default": "",
                 "type": "simple",
                 "visible": true
+            },
+            "list": {
+                "field": "year",
+                "default": "",
+                "visible": true
+            }
+        },
+        {
+            "name": "issued",
+            "listing": {
+                "type": "date",
+                "format": "dd M yy",
+                "title": "Date of publication",
+                "visible" : true,
+                "pos" : 6
+            },
+            "csv_tsv": {
+                "title": "Date of publication",
+                "visible": true,
+                "pos": 2
+            },
+            "details": {
+                "visible": false
+            },
+            "card": {
+                "type": "date",
+                "format": "dd M yy",
+                "field": "date",
+                "default": "",
+                "visible": true
+            },
+            "list": {
+                "type": "date",
+                "format": "dd M yy",
+                "field": "date",
+                "default": "",
+                "visible": true
             }
         },
         {
@@ -459,6 +486,29 @@
                 "field": "long_description",
                 "default": "",
                 "visible": true
+            }
+        },
+        {
+            "name": "depiction",
+            "listing": {
+                "title": "depiction",
+                "visible": false
+            },
+            "facet": {
+                "size": 50,
+                "min_size": 10,
+                "title": "depiction",
+                "visible": false
+            },
+            "card": {
+                "field": "depiction",
+                "default": "",
+                "visible": false
+            },
+            "list": {
+                "field": "depiction",
+                "default": "",
+                "visible": false
             }
         }
     ]
