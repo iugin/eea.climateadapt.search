@@ -11,8 +11,8 @@
     "external_templates": {
         "local_path": "/external_templates",
         "protocol": "http",
-        "host": "varnish",
-        "port": "6081",
+        "host": "plone",
+        "port": "8080",
         "head_path": "/Plone/marine/external-template-head",
         "header_path": "/Plone/marine/external-template-header",
         "footer_path": "/Plone/marine/external-template-footer",
