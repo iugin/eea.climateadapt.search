@@ -184,7 +184,7 @@
             }
         },
         {
-            "name": "type_of_data",
+            "name": "typeOfData",
             "listing": {
                 "title": "Type of Data",
                 "visible" : true
@@ -210,12 +210,12 @@
                 "facet_display_options": ["sort", "checkbox"]
             },
             "card": {
-                "field": "type_of_data",
+                "field": "typeOfData",
                 "default": "",
                 "visible": true
             },
             "list": {
-                "field": "type_of_data",
+                "field": "typeOfData",
                 "default": "",
                 "visible": true
             }

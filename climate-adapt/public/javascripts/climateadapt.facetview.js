@@ -22,22 +22,22 @@ window.esbootstrap_options = {
 
     predefined_filters : [
         {
-            "constant_score": {
-                "filter": {
-                    "bool": {
-                        "should": [
+            'constant_score': {
+                'filter': {
+                    'bool': {
+                        'should': [
                             {
-                                "bool": {
-                                    "must": {"term": {"type_of_data": "Indicators"}},
-                                    "should": [
-                                        {"bool": {"must_not": {"exists": {"field": "expires"}}}},
-                                        {"range": {"expires": {"gte": today}}}
-                                    ]
+                                'bool': {
+                                    'must_not': {'match': {'typeOfData': 'Indicators'}}
                                 }
                             },
                             {
-                                "bool": {
-                                    "must_not": {"term": {"type_of_data": "Indicators"}}
+                                'bool': {
+                                    'must': {'match': {'typeOfData': 'Indicators'}},
+                                    'should': [
+                                        {'bool': {'must_not': {'exists': {'field': 'expires'}}}},
+                                        {'range': {'expires': {'gte': today}}}
+                                    ]
                                 }
                             }
                         ]

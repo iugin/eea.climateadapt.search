@@ -153,7 +153,7 @@
     "http://purl.org/dc/terms/title": ["title","label"],
     "http://purl.org/dc/terms/abstract": "text",
     "http://purl.org/dc/terms/spatial":["spatial","places"],
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": ["type_of_data"],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": ["typeOfData"],
     "http://purl.org/dc/terms/issued": ["issued", "publication"],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#about": ["about"],
     "http://purl.org/dc/terms/expires" : ["expires"],
@@ -176,6 +176,9 @@
       "http://www.w3.org/ns/dcat#Dataset",
       "http://www.w3.org/ns/dcat#Distribution",
       "Output from Annual Management Plan"
+    ],
+    "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.casestudy#elements": [
+      "None"
     ]
   },
   "//": "Index _only_ these values for given properties",

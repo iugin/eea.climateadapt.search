@@ -77,7 +77,7 @@
       "null_value" : "Various other issues",
       "copy_to" : ["did_you_mean", "searchable_topics"]
     },
-    "type_of_data" : {
+    "typeOfData" : {
       "type" : "string",
       "analyzer" : "none",
       "fielddata": true,
