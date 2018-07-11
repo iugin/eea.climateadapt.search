@@ -76,8 +76,8 @@
         },
         "defaultContentType" : "generic",
         "images": {
-            "fallback_thumb" : "",
-            "fallback_icon" : "",
+            "fallback_thumb" : "http://www.eea.europa.eu/themes/air/multimedia/multimedia/image_preview",
+            "fallback_icon" : "https://www.eea.europa.eu/portal_depiction/generic/image_thumb",
             "rules": [
                 {
                     "rule": "contains",

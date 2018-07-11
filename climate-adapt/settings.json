@@ -10,9 +10,8 @@
     },
     "external_templates": {
         "local_path": "/external_templates",
-        "protocol": "http",
-        "host": "plone",
-        "port": "8080",
+        "protocol": "https",
+        "host": "ccadapt-demo.eea.europa.eu",
         "head_path": "/cca/external-template-head",
         "header_path": "/cca/external-template-header",
         "footer_path": "/cca/external-template-footer",
@@ -40,7 +39,7 @@
         "site_title": "Climate adapt search",
         "site_description": "",
         "enableBreadcrumbs": true,
-        "breadcrumbs": [{"Home":"http://climate-adapt.eea.europa.eu/"}, {"Climate adapt search": ""}],
+        "breadcrumbs": [{"Home":"https://climate-adapt.eea.europa.eu/"}, {"Climate adapt search": ""}],
         "dataprovencance_info_text": "Climate adapt search",
         "dataprovencance_info_url": "climate adapt dev",
         "further_info": ""
