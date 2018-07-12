@@ -6,7 +6,7 @@ search:
     elastic_port: '9200'
     elastic_index: 'global-search'
     AUTO_INDEXING: 'false'
-    APP_CONFIG_DIRNAME: climateadapt
+    APP_CONFIG_DIRNAME: climate-adapt
   log_driver: ''
   ports:
     - '3000:3000'
