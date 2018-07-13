@@ -48,8 +48,6 @@
             ],
             "details_page": [],
             "layout_page" : [
-                "facetview/vendor/dist/libs/jquery.min.js",
-
                 "facetview/vendor/dist/libs/jquery.migrate.3.0.0.min.js",
                 "facetview/vendor/jquery-ui.1.12.1/jquery-ui.min.js",
 
