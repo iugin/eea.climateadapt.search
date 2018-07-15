@@ -66,6 +66,8 @@
                 "facetview/jquery.autocompletewithhighlight.js",
                 "facetview/jquery.autocompleteforfacet.js",
 
+                "javascripts/esbootstrap.facetview.js",
+
                 "javascripts/climateadapt.facetview.js",
                 "javascripts/main.js"
             ]
