@@ -43,7 +43,7 @@
         },
         "js_resources": {
             "index_page": [
-                "javascripts/esbootstrap.facetview.js",
+
                 "javascripts/climateadapt.facetview.js"
             ],
             "details_page": [],
