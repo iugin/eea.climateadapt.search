@@ -117,9 +117,17 @@
       "http://www.w3.org/ns/dcat#Distribution",
       "Output from Annual Management Plan"
     ],
-    "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.casestudy#elements": [
-      "None"
-    ]
+    "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.guidancedocument#elements": ["None"],
+    "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.aceproject#elements": ["None"],
+    "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.indicator#elements": ["None"],
+    "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.adaptationoption#elements": ["None"],
+    "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.mapgraphdataset#elements": ["None"],
+    "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.informationportal#elements": ["None"],
+    "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.city_profile#elements": ["None"],
+    "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.tool#elements": ["None"],
+    "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.casestudy#elements": ["None"],
+    "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.organisation#elements": ["None"],
+    "https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.publicationreport#elements": ["None"]
   },
   "//": "Index _only_ these values for given properties",
   "whiteMap": {
