@@ -33,6 +33,14 @@ window.jQuery(document).ready(function($){
                 $(".lazyLoad").Lazy();
         });
     }
-    
+
+    var url = window.location.pathname;
+    var url_href = window.location.href;
+
+    if(url === "/++theme++climateadaptv2/"){
+
+        window.history.pushState('Climate Adapt Search', 'Climate Adapt Search', url_href.replace("++theme++climateadaptv2", "data-and-downloads"));
+    }
+
 });
 
