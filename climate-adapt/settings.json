@@ -39,6 +39,7 @@
                 "facetview/css/facetview.css",
                 "css/style.css",
                 "css/tiles.css"
+
             ]
         },
         "js_resources": {
@@ -74,7 +75,7 @@
         },
         "site_title": "Climate adapt search",
         "site_description": "",
-        "enableBreadcrumbs": true,
+        "enableBreadcrumbs": false,
         "breadcrumbs": [{"Home":"https://climate-adapt.eea.europa.eu/"}, {"Climate adapt search": ""}],
         "dataprovencance_info_text": "Climate adapt search",
         "dataprovencance_info_url": "climate adapt dev",

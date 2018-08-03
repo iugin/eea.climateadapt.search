@@ -34,13 +34,47 @@ window.jQuery(document).ready(function($){
         });
     }
 
+    $(".search-app #personaltools-login").on("click", function (ev) {
+       ev.preventDefault();
+       window.location.href = $("#personaltools-login").attr("href");
+    });
+
+    $(".search-app #personal-menu").on("mouseenter click", function(ev){
+          ev.preventDefault();
+          $(".login-container").css("display","block");
+    }).on("mouseleave", function (ev) {
+          ev.preventDefault();
+          //debugger;
+          if( $(ev.target)[0] == $(".login-container")[0] || $(ev.target)[0] == $(".login-text")[0] )  $(".login-container").css("display","none");
+    });
+
     var url = window.location.pathname;
     var url_href = window.location.href;
 
     if(url === "/++theme++climateadaptv2/"){
-
         window.history.replaceState('Climate Adapt Search', 'Climate Adapt Search', url_href.replace("++theme++climateadaptv2", "data-and-downloads"));
     }
+
+    //$(".site-container #portal-columns").remove();
+    $("#eea-above-columns").detach().prependTo("portal-column-content");
+        //.css("margin-top", "20px");
+
+    $("#portal-columns-app").detach().appendTo("#portal-columns");
+    $("#portal-breadcrumbs").hide();
+
+
+    var url = window.location.origin /*+ '/cca/'*/;
+    var base_url = $("base").attr('href');
+    if (!base_url) {
+        return;
+    }
+    var base_url_length = base_url.length;
+    $(".sub-menu-link, .sub-sub-menu-link, .main-nav-item > a").each(function(idx, el) {
+      var el_url = el.href;
+      var url_length = el_url.length;
+      var last_value = el_url.substr(base_url_length, url_length);
+      el.href = "/" + url  +last_value;
+    });
 
 });
 

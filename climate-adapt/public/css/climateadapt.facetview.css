@@ -1,4 +1,51 @@
 /* remove draft watermark */
 #content {
   background: white;
-} 
+}
+
+.search-app .header .main-nav-item {
+    margin-bottom: 0;
+}
+
+.search-app .header .main-nav-item:hover>a {
+    height: 100%;
+}
+
+.search-app div.container {
+    padding-right: 0;
+    padding-left: 18px;
+}
+
+.search-app .site-container {
+    margin-top: 0;
+}
+
+.search-app #portal-columns {
+    padding-top: 0;
+}
+
+.search-app #portal-breadcrumbs {
+    margin-top: 0;
+}
+
+.fullwidth.search-app div.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.fullwidth.search-app .footer-nav-wrapper .footer-nav {
+    padding-left: 0.6rem;
+}
+
+.fullwidth.search-app #content.content {
+    margin: 0 !important;
+    padding-bottom: 0;
+}
+
+.fullwidth.search-app .header .main-nav {
+    margin-left: 0;
+}
+
+.search-app footer {
+    margin-top: 0;
+}
