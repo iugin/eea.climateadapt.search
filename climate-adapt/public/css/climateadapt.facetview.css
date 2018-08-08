@@ -49,3 +49,10 @@
 .search-app footer {
     margin-top: 0;
 }
+
+@media handheld, screen and (max-device-width: 480px){
+    input, textarea {
+        font-size: 140% !important;
+        font-family: inherit !important;
+    }
+}

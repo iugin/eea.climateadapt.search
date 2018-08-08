@@ -69,7 +69,6 @@ window.jQuery(document).ready(function($){
     var url_href = window.location.href;
     if(url === "/++theme++climateadaptv2/"){
         window.history.replaceState('Climate Adapt Search', 'Climate Adapt Search', url_href.replace("++theme++climateadaptv2", "data-and-downloads"));
-
     }
     //$(".site-container #portal-columns").remove();
     $("#eea-above-columns").detach().prependTo("portal-column-content");
@@ -79,6 +78,19 @@ window.jQuery(document).ready(function($){
 
 
     $("#portal-breadcrumbs").hide();
+
+    $.ajax({
+        url: window.location.origin,
+        method: "GET",
+        xhrFields: {
+          withCredentials: true
+       },
+        success: function ( data,  textStatus, jqXHR) {
+            $(".login .personal-menu-action").replaceWith( $(data).find(".login .personal-menu-action") );
+            $(".login-container > ul").replaceWith( $(data).find(".login-container > ul") );
+        }
+    });
+
     var url = window.location.origin /*+ '/cca/'*/;
     var base_url = $("base").attr('href');
     if (!base_url) {
@@ -92,7 +104,6 @@ window.jQuery(document).ready(function($){
         el.href = "/" + url  +last_value;
 
     });
-
 
 });
 
