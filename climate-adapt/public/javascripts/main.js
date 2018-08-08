@@ -79,6 +79,12 @@ window.jQuery(document).ready(function($){
 
     $("#portal-breadcrumbs").hide();
 
+    $("#facetview_selected_filters").on("mouseenter",".facetview_selection", function (ev) {
+        $(ev.target).find(".eea-icon-times").removeClass("hidden");
+    }).on("mouseleave",".facetview_selection", function (ev) {
+        $(ev.target).find(".eea-icon-times").addClass("hidden");
+    } );
+
     $.ajax({
         url: window.location.origin,
         method: "GET",

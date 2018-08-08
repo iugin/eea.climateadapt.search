@@ -48,6 +48,15 @@
 
 .search-app footer {
     margin-top: 0;
+
+}
+
+.search-app  .footer-nav-wrapper a {
+    color: white;
+}
+
+.facetview_filterselected .eea-icon {
+    margin-top: -2px;
 }
 
 @media handheld, screen and (max-device-width: 480px){
