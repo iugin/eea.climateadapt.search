@@ -78,13 +78,13 @@ html
         //link(rel='stylesheet', href="/frontpage/cca/++theme++climateadaptv2/static/style-search.css")
         link(rel='stylesheet', href="/++theme++climateadaptv2/static/css/compiled-css.css")
 
-    body(class="fullwidth #{app_id}")
+    div(class="#{app_id} search-app fullwidth")
         include ../../../../external_templates/header.html
 
         if (enableBreadcrumbs)
             +portal_breadcrumbs (breadcrumbs)
 
-        div(id="portal-columns")
+        div(id="portal-columns-app")
             div(class="container")
                 div(class="content" id="content")
                     block content
@@ -115,13 +115,10 @@ html
         block extrajavascripts
         script(type="text/javascript", src="https://www.eea.europa.eu/external_templates_scripts.js")
 
-
-        script(type="text/javascript", src="/++theme++climateadaptv2/static/js/main.js")
-        script(type="text/javascript", src="/++theme++climateadaptv2/static/js/dev_fixes.js")
-
-
         if google_map_key != "false"
             script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=#{google_map_key}")
+
+
 
         //include ../../../../external_templates/footer.html
 
