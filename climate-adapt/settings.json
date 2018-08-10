@@ -44,8 +44,7 @@
         },
         "js_resources": {
             "index_page": [
-
-                "javascripts/climateadapt.facetview.js"
+               
             ],
             "details_page": [],
             "layout_page" : [
