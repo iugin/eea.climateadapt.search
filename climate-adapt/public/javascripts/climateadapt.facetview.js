@@ -1,4 +1,5 @@
 var today = getTodayWithTime();
+
 window.esbootstrap_options = {
     search_sortby: [
         {
@@ -76,6 +77,11 @@ window.esbootstrap_options = {
     ]
 */
 };
+
+if($.getUrlVars({}).SearchableText !== undefined){
+    window.esbootstrap_options.q = $.getUrlVars({}).SearchableText;
+}
+
 function updateContentTypes(element, result){
     result.contentType = 'generic';
     var contentTypes = {};
