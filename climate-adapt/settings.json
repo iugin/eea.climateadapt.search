@@ -44,9 +44,7 @@
         },
         "js_resources": {
             "index_page": [
-               "javascripts/esbootstrap.facetview.js",
 
-                "javascripts/climateadapt.facetview.js"
             ],
             "details_page": [],
             "layout_page" : [
@@ -68,6 +66,8 @@
                 "facetview/jquery.autocompletewithhighlight.js",
                 "facetview/jquery.autocompleteforfacet.js",
 
+                "javascripts/esbootstrap.facetview.js",
+                "javascripts/climateadapt.facetview.js",
 
                 "javascripts/main.js"
             ]
