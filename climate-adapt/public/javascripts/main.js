@@ -97,6 +97,50 @@ window.jQuery(document).ready(function($){
         }
     });
 
+    $(window).on('post_search_callback', function () {
+        if ( $('.facetview_freetext').val().length > 0){
+            var d = {
+                "v":"1",
+                "t": "event",
+                // tracking ID
+                "tid": "UA-76670863-1",
+
+                "cid": "555",
+                // event category
+                "ec" : "database-search",
+                // event action
+                "ea" : "search",
+                // event value
+                "ev" : 1,
+                //event label
+                "el" : encodeURIComponent($('.facetview_freetext').val())
+            };
+
+            $.ajax({
+               method: "POST",
+               url:"https://www.google-analytics.com/collect",
+               data : $.param(d),
+               success: function (data, textStatus, jqXHR) {
+                    console.log("sent search word to GA: " + textStatus);
+               },
+               error: function ( jqXHR, textStatus, errorThrown) {
+                    console.error(errorThrown);
+               }
+            });
+
+            //for production
+            /*ga('send', {
+                hitType: 'event',
+                eventCategory: 'database-search',
+                eventAction: 'search',
+                eventLabel: encodeURIComponent($('.facetview_freetext').val()),
+                eventValue: 1
+            });*/
+
+        }
+
+    });
+
     var url = window.location.origin /*+ '/cca/'*/;
     var base_url = $("base").attr('href');
     if (!base_url) {
@@ -110,6 +154,7 @@ window.jQuery(document).ready(function($){
         el.href = "/" + url  +last_value;
 
     });
+
 
 });
 
