@@ -13,14 +13,13 @@ window.esbootstrap_options = {
             'display_desc': 'Newest'
         }
     ],
-    sort: [{'year': {'order': 'desc'}}],
     paging: {
         from: 0,
         size: 30
     },
     display_type: 'card',
     resultModifier: updateResult,
-
+    initialsearch: true,
     predefined_filters : [
         {
             'constant_score': {
@@ -46,7 +45,8 @@ window.esbootstrap_options = {
                 }
             }
         }
-    ]
+    ],
+    sort: [{'year': {'order': 'desc'}}]
 /*
     predefined_filters : [
         {'term': {'hasWorkflowState': 'published'}},
