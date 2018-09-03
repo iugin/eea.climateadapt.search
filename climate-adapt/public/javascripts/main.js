@@ -116,7 +116,7 @@ window.jQuery(document).ready(function($){
                     // event value
                     "ev" : 1,
                     //event label
-                    "el" : encodeURIComponent($('.facetview_freetext').val())
+                    "el" : encodeURIComponent( $.trim($('.facetview_freetext').val()))
                 };
 
                 $.ajax({
