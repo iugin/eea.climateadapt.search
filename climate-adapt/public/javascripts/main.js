@@ -71,6 +71,7 @@ window.jQuery(document).ready(function($){
         window.history.replaceState('Climate Adapt Search', 'Climate Adapt Search', url_href.replace("++theme++climateadaptv2", "data-and-downloads"));
     }
     //$(".site-container #portal-columns").remove();
+    $("#portal-column-content").hide();
     $("#eea-above-columns").detach().prependTo("portal-column-content");
 
         //.css("margin-top", "20px");
@@ -98,45 +99,48 @@ window.jQuery(document).ready(function($){
     });
 
     $(window).on('post_search_callback', function () {
-        if ( $('.facetview_freetext').val().length > 0){
-            var d = {
-                "v":"1",
-                "t": "event",
-                // tracking ID
-                "tid": "UA-76670863-1",
+        var gTracking = $("#analyticsID").attr("data-tracking");
+        if( gTracking !== undefined ){
+            if ( $('.facetview_freetext').val().length > 0){
+                var d = {
+                    "v":"1",
+                    "t": "event",
+                    // tracking ID
+                    "tid": gTracking,
+                    // client id
+                    "cid": "555",
+                    // event category
+                    "ec" : "database-search",
+                    // event action
+                    "ea" : "search",
+                    // event value
+                    "ev" : 1,
+                    //event label
+                    "el" : encodeURIComponent($('.facetview_freetext').val())
+                };
 
-                "cid": "555",
-                // event category
-                "ec" : "database-search",
-                // event action
-                "ea" : "search",
-                // event value
-                "ev" : 1,
-                //event label
-                "el" : encodeURIComponent($('.facetview_freetext').val())
-            };
+                $.ajax({
+                    method: "POST",
+                    url:"https://www.google-analytics.com/collect",
+                    data : $.param(d),
+                    success: function (data, textStatus, jqXHR) {
+                        console.log("sent search word to GA: " + textStatus);
+                    },
+                    error: function ( jqXHR, textStatus, errorThrown) {
+                        console.error(errorThrown);
+                    }
+                });
 
-            $.ajax({
-               method: "POST",
-               url:"https://www.google-analytics.com/collect",
-               data : $.param(d),
-               success: function (data, textStatus, jqXHR) {
-                    console.log("sent search word to GA: " + textStatus);
-               },
-               error: function ( jqXHR, textStatus, errorThrown) {
-                    console.error(errorThrown);
-               }
-            });
+                //for production
+                /*ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'database-search',
+                    eventAction: 'search',
+                    eventLabel: encodeURIComponent($('.facetview_freetext').val()),
+                    eventValue: 1
+                });*/
 
-            //for production
-            /*ga('send', {
-                hitType: 'event',
-                eventCategory: 'database-search',
-                eventAction: 'search',
-                eventLabel: encodeURIComponent($('.facetview_freetext').val()),
-                eventValue: 1
-            });*/
-
+            }
         }
 
     });
