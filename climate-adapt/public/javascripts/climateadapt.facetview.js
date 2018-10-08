@@ -20,7 +20,7 @@ window.esbootstrap_options = {
     display_type: 'card',
     resultModifier: updateResult,
     initialsearch: true,
-    predefined_filters : [
+    /*predefined_filters : [
         {
             'constant_score': {
                 'filter': {
@@ -45,7 +45,7 @@ window.esbootstrap_options = {
                 }
             }
         }
-    ],
+    ],*/
     sort: [{'year': {'order': 'desc'}}]
 /*
     predefined_filters : [
