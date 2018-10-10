@@ -274,6 +274,27 @@
             }
         },
         {
+            "name": "macro-transnational-region",
+            "listing": {
+                "title": "Transnational regions",
+                "visible": true
+            },
+            "csv_tsv": {
+                "title": "Transnational regions",
+                "visible": true,
+                "pos": 6
+            },
+            "facet": {
+                "facet_display_options": ["sort", "checkbox"],
+                "size": 100,
+                "min_size": 10,
+                "title": "Transnational regions",
+                "order": "term",
+                "operator": "OR",
+                "visible": true
+            }
+        },
+        {
             "name": "elements",
             "listing": {
                 "title": "Adaptation Elements",
