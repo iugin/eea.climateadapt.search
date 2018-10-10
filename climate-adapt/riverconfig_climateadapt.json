@@ -24,7 +24,8 @@
     "http://purl.org/dc/terms/references",
     "http://xmlns.com/foaf/0.1/depiction",
     "http://www.eea.europa.eu/ontologies.rdf#hasWorkflowState",
-    "http://purl.org/dc/terms/replaces"
+    "http://purl.org/dc/terms/replaces",
+    "http://www.eea.europa.eu/ontologies.rdf#macro-transnational-region"
   ],
   "listtype": "white",
   "normProp": {
