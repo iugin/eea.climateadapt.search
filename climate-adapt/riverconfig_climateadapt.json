@@ -104,7 +104,8 @@
     "http://xmlns.com/foaf/0.1/depiction" : ["depiction"],
     "http://www.eea.europa.eu/ontologies.rdf#hasWorkflowState": "hasWorkflowState",
     "http://purl.org/dc/terms/replaces": "replaces",
-    "http://purl.org/dc/terms/isReplacedBy": "is_replaced"
+    "http://purl.org/dc/terms/isReplacedBy": "is_replaced",
+    "http://www.eea.europa.eu/ontologies.rdf#macro-transnational-region": ["macro-transnational-region"]
   },
   "//": "Normalise the properties to the given value",
   "normalisedProperties": {
