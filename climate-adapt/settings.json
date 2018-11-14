@@ -26,7 +26,8 @@
         "css_resources": {
             "index_page": [
                 "css/esbootstrap.facetview.css",
-                "css/climateadapt.facetview.css"
+                "css/climateadapt.facetview.css",
+                "css/custom.css"
             ],
             "details_page": [
                 "css/esbootstrap.facetview.css"
@@ -38,13 +39,14 @@
                 "facetview/css/style.css",
                 "facetview/css/facetview.css",
                 "css/style.css",
-                "css/tiles.css"
+                "css/tiles.css",
+                "css/custom.css"
 
             ]
         },
         "js_resources": {
             "index_page": [
-
+                "javascripts/custom.js"
             ],
             "details_page": [],
             "layout_page" : [
@@ -69,7 +71,9 @@
                 "javascripts/climateadapt.facetview.js",
                 "javascripts/esbootstrap.facetview.js",
 
-                "javascripts/main.js"
+                "javascripts/main.js",
+                "javascripts/custom.js"
+
             ]
         },
         "site_title": "Climate adapt search",
