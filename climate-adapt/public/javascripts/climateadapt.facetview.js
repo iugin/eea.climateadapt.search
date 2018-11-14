@@ -17,7 +17,7 @@ window.esbootstrap_options = {
         from: 0,
         size: 30
     },
-    display_type: 'card',
+    display_type: 'list',
     resultModifier: updateResult,
     initialsearch: true,
     /*predefined_filters : [
@@ -161,4 +161,3 @@ function updateResult(element, result){
     result = updateContentTypes(element, result);
     return(result);
 }
-

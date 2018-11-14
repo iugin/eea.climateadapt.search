@@ -46,7 +46,6 @@
         },
         "js_resources": {
             "index_page": [
-                "javascripts/custom.js"
             ],
             "details_page": [],
             "layout_page" : [
@@ -71,8 +70,7 @@
                 "javascripts/climateadapt.facetview.js",
                 "javascripts/esbootstrap.facetview.js",
 
-                "javascripts/main.js",
-                "javascripts/custom.js"
+                "javascripts/main.js"
 
             ]
         },
