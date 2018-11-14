@@ -200,7 +200,11 @@
     "http://www.eea.europa.eu/portal_workflow/eea_default_workflow/states/published": "published",
     "https://climate-adapt.eea.europa.eu/portal_workflow/cca_items_workflow/states/published": "published",
     "https://climate-adapt.eea.europa.eu/portal_workflow/cca_webpages_workflow/states/published": "published",
-    "https://climate-adapt.eea.europa.eu/portal_workflow/newsevents_workflow/states/published": "published"
+    "https://climate-adapt.eea.europa.eu/portal_workflow/newsevents_workflow/states/published": "published",
+
+    "Amazonia": "Other Regions",
+    "Caribbean Area": "Other Regions",
+    "Indian Ocean Area": "Other Regions"
   },
   "normMissing": {
     "publication": "unknown",

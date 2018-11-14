@@ -18,7 +18,7 @@
         "strip_templates": true
     },
     "layout_vars": {
-        "head_title": "Climate adapt test",
+        "head_title": "Climate adapt search",
         "app_id": "pam",
         "skip_external_template_styles": true,
         "skip_resources_bundling": false,
