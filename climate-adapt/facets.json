@@ -207,7 +207,8 @@
                 "min_size": 10,
                 "order": "term",
                 "operator": "OR",
-                "facet_display_options": ["sort", "checkbox"]
+                "facet_display_options": ["sort", "checkbox"],
+                "values_blacklist": ["Webpage"]
             },
             "card": {
                 "field": "typeOfData",
