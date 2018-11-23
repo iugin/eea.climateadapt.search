@@ -50,6 +50,6 @@ jQuery(document).ready(function($) {
 function limitString() {
     $.each($('.tileItem > .tileBody'), function(index, value) {
       description = $(value).text();
-      $(value).text(description.slice(0, 400) + '...');
+      $(value).text(description.slice(0, 700) + '...');
     });
 }
