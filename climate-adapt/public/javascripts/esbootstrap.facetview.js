@@ -25,6 +25,7 @@ jQuery(document).ready(function($) {
             add_EEA_settings();
             viewReady();
             replaceNumbers();
+            limitString();
             $(window).trigger('post_search_callback');
         },
         paging: {
@@ -44,3 +45,11 @@ jQuery(document).ready(function($) {
     }
     eea_facetview('.facet-view-simple', opts);
 });
+
+
+function limitString() {
+    $.each($('.tileItem > .tileBody'), function(index, value) {
+      description = $(value).text();
+      $(value).text(description.slice(0, 400) + '...');
+    });
+}

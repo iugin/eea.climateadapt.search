@@ -1,3 +1,9 @@
 .eea-list-tiles .tileItem .tileImage {
     max-width: 20%;
 }
+
+.eea-list-tiles .tileItem .tileBody {
+    margin-left: 1em;
+    /* height: 9em; */
+    /* overflow: hidden; */
+}

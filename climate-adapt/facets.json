@@ -397,7 +397,7 @@
                 "pos": 8
             },
             "facet": {
-                "visible": true,
+                "visible": false,
                 "title": "Year",
                 "type": "rangehistogram",
                 "histogram_config": {
