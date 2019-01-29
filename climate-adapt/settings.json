@@ -11,7 +11,7 @@
     "external_templates": {
         "local_path": "/external_templates",
         "protocol": "https",
-        "host": "cca-staging.eea.europa.eu",
+        "host": "climate-adapt.eea.europa.eu",
         "head_path": "/cca/external-template-head",
         "header_path": "/cca/external-template-header",
         "footer_path": "/cca/external-template-footer",
