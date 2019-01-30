@@ -103,6 +103,12 @@
   "normalisedProperties": {
   },
   "blackMap": {
+    "year": ["None", "Unknown"],
+    "issued": ["None", "Unknown"],
+    "http://purl.org/dc/terms/issued": ["None", "Unknown"],
+    "http://purl.org/dc/terms/expires": ["None", "Unknown"],
+    "http://www.eea.europa.eu/portal_types/Event#endDate": ["None", "Unknown"],
+    "expires": ["None", "Unknown"],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
       "Webpage",
       "Tracked file",
