@@ -123,7 +123,8 @@
       "copy_to" : ["did_you_mean", "autocomplete"]
     },
     "year" : {
-      "type" : "long"
+      "type" : "text",
+      "analyzer" : "date2year"
     },
     "time_coverage" : {
       "type" : "string",

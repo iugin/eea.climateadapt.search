@@ -222,10 +222,22 @@
     "organisation": "European Environment Agency (EEA)",
     "format": "text/html",
     "places" : "unknown",
-    "year": 2000,
+    "year": "2000",
     "hasWorkflowState": "published"
   },
   "syncConditions": [
+      "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.guidancedocument#eeaclimateadaptguidancedocument> } UNION ",
+      "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.aceproject#eeaclimateadaptaceproject> } UNION ",
+      "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.indicator#eeaclimateadaptindicator> } UNION ",
+      "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.adaptationoption#eeaclimateadaptadaptationoption> } UNION ",
+      "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.informationportal#eeaclimateadaptinformationportal> } UNION ",
+      "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.video#eeaclimateadaptvideo> } UNION ",
+      "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.tool#eeaclimateadapttool> } UNION ",
+      "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.casestudy#eeaclimateadaptcasestudy> } UNION ",
+      "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.organisation#eeaclimateadaptorganisation> } UNION ",
+      "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.publicationreport#eeaclimateadaptpublicationreport> } "
+  ],
+  "syncConditions_back": [
     "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.guidancedocument#eeaclimateadaptguidancedocument> } UNION ",
     "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.aceproject#eeaclimateadaptaceproject> } UNION ",
     "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.indicator#eeaclimateadaptindicator> } UNION ",
@@ -236,7 +248,6 @@
     "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.casestudy#eeaclimateadaptcasestudy> } UNION ",
     "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.organisation#eeaclimateadaptorganisation> } UNION ",
     "{?resource a <https://climate-adapt.eea.europa.eu/portal_types/eea.climateadapt.publicationreport#eeaclimateadaptpublicationreport> } "
-
   ],
   "graphSyncConditions": ["FILTER (str(?graph) = concat(str(?resource), '/@@rdf')). FILTER (?time > xsd:dateTime('1990-01-01T00:00:00')). FILTER (?time < xsd:dateTime('2100-01-01T00:00:00'))"],
   "syncTimeProp": "http://cr.eionet.europa.eu/ontologies/contreg.rdf#lastRefreshed"
