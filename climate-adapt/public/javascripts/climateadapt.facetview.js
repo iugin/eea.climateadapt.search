@@ -8,7 +8,7 @@ window.esbootstrap_options = {
             'display_desc': 'Title z-a'
         },
         {
-            'field': 'year',
+            'field': 'modified',
             'display_asc': 'Oldest',
             'display_desc': 'Newest'
         }
@@ -47,7 +47,7 @@ window.esbootstrap_options = {
             }
         }
     ],*/
-    sort: [{'year': {'order': 'desc'}}]
+    sort: [{'modified': {'order': 'desc'}}]
 /*
     predefined_filters : [
         {'term': {'hasWorkflowState': 'published'}},
