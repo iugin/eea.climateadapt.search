@@ -386,7 +386,7 @@
         },
         {
             "name": "year",
-            "values_blacklist": ["0", 0, "undefined"],
+            "values_blacklist": ["0", 0, "undefined", "None"],
             "listing": {
                 "title": "Year",
                 "visible": true
