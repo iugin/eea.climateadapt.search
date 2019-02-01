@@ -21,7 +21,7 @@
         }
     },
     "issued": {
-      "type": "string"
+      "type": "date"
     },
     "publication": {
       "type" : "string",
