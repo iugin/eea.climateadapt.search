@@ -341,7 +341,7 @@
                 "North Korea", "South Korea", "Kuwait", "Cayman Islands", "Kazakhstan", "Laos", "Lebanon",
                 "Saint Lucia", "Liechtenstein", "Sri Lanka", "Liberia", "Lesotho", "Lithuania", "Luxembourg",
                 "Latvia", "Libya", "Morocco", "Monaco", "Moldova", "Montenegro", "Saint Martin", "Madagascar",
-                "Marshall Islands", "Macedonia", "Mali", "Myanmar [Burma]", "Mongolia", "Macao", "Northern Mariana Islands",
+                "Marshall Islands", "Republic of North Macedonia", "Mali", "Myanmar [Burma]", "Mongolia", "Macao", "Northern Mariana Islands",
                 "Martinique", "Mauritania", "Montserrat", "Malta", "Mauritius", "Maldives", "Malawi", "Mexico",
                 "Malaysia", "Mozambique", "Namibia", "New Caledonia", "Niger", "Norfolk Island", "Nigeria", "Nicaragua",
                 "Netherlands", "Norway", "Nepal", "Nauru", "Niue", "New Zealand", "Oman", "Panama", "Peru",
@@ -356,8 +356,7 @@
                 "Uzbekistan", "Vatican City", "Saint Vincent and the Grenadines", "Venezuela", "British Virgin Islands",
                 "U.S. Virgin Islands", "Vietnam", "Vanuatu", "Wallis and Futuna", "Samoa", "Kosovo (UNSCR 1244/99)",
                 "Kosovo under UN Security Council Resolution 1244/99","Yemen", "Mayotte", "South Africa", "Zambia",
-                "Zimbabwe", "Russia", "Czechia", "Kosovo", "Macedonia","Former Yugoslav Republic of Macedonia",
-                "Macedonia (FYR)","England" ,"Scotland","Wales","Northern Ireland", "Congo"],
+                "Zimbabwe", "Russia", "Czechia", "Kosovo", "England" ,"Scotland","Wales","Northern Ireland", "Congo"],
             "listing": {
                 "title": "Countries",
                 "visible" : true
