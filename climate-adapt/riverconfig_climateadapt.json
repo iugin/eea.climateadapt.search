@@ -205,7 +205,7 @@
     "Former Yugoslav Republic of Macedonia": "Republic of North Macedonia",
     "Macedonia": "Republic of North Macedonia",
     "Macedonia (FYR)": "Republic of North Macedonia",
-    
+
     "Indicator Specification": "Indicators",
     "http://www.eea.europa.eu/portal_workflow/indicators_workflow/states/visible": "published",
     "http://www.eea.europa.eu/portal_workflow/indicators_workflow/states/published": "published",
@@ -213,6 +213,10 @@
     "https://climate-adapt.eea.europa.eu/portal_workflow/cca_items_workflow/states/published": "published",
     "https://climate-adapt.eea.europa.eu/portal_workflow/cca_webpages_workflow/states/published": "published",
     "https://climate-adapt.eea.europa.eu/portal_workflow/newsevents_workflow/states/published": "published",
+
+    "https://climate-adapt.eea.europa.eu/portal_workflow/cca_items_workflow/states/archived": "archived",
+    "https://climate-adapt.eea.europa.eu/portal_workflow/cca_webpages_workflow/states/archived": "archived",
+    "https://climate-adapt.eea.europa.eu/portal_workflow/newsevents_workflow/states/archived": "archived",
 
     "Amazonia": "Other Regions",
     "Caribbean Area": "Other Regions",
