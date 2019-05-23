@@ -317,6 +317,27 @@
             }
         },
         {
+            "name": "origin_website",
+            "listing": {
+                "title": "Source Website",
+                "visible": true
+            },
+            "csv_tsv": {
+                "title": "Source Website",
+                "visible": true,
+                "pos": 7
+            },
+            "facet": {
+                "facet_display_options": ["sort", "checkbox"],
+                "size": 100,
+                "min_size": 10,
+                "title": "Source Website",
+                "order": "term",
+                "operator": "OR",
+                "visible": true
+            }
+        },
+        {
             "name": "places",
             "values_whitelist":[
                 "Andorra", "United Arab Emirates", "Afghanistan", "Antigua and Barbuda",
