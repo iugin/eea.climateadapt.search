@@ -335,6 +335,16 @@
                 "order": "term",
                 "operator": "OR",
                 "visible": true
+            },
+            "card": {
+                "field": "origin_website",
+                "default": "",
+                "visible": true
+            },
+            "list": {
+                "field": "origin_website",
+                "default": "",
+                "visible": true
             }
         },
         {

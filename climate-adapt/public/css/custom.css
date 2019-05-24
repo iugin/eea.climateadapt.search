@@ -7,3 +7,12 @@
     /* height: 9em; */
     /* overflow: hidden; */
 }
+
+.image-hide {
+    display: none;
+}
+
+.tileContent .logoAdapteCCA {
+    height: 23px;
+    display: inline;
+}
