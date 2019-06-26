@@ -27,7 +27,7 @@
             "index_page": [
                 "css/esbootstrap.facetview.css",
                 "css/climateadapt.facetview.css",
-                "css/custom.css"
+                "css/custom.css",
                 "css/cca-search.css"
             ],
             "details_page": [
@@ -41,7 +41,7 @@
                 "facetview/css/facetview.css",
                 "css/style.css",
                 "css/tiles.css",
-                "css/custom.css"
+                "css/custom.css",
                 "css/cca-search.css"
 
             ]
